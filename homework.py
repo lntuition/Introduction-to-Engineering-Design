@@ -15,7 +15,7 @@ import os
 mailId = ''
 mailPassword = ''
 studentId = ["20181632", "20181699", "20171704", "20181671", "20181676", "20181622", "20181628"]
-homeworkId = ""
+homeworkId = "39" 
 saveDir = '.'
 isZipped = True
 isCfile = True
@@ -107,7 +107,7 @@ if __name__ == "__main__":
     if isCfile is True:
         if 'exefile' not in os.listdir(saveDir):
             os.mkdir('exefile')
-            os.chdir('exefile/')
+        os.chdir('exefile/')
         
         for cFileName in cFileSet:
             os.system('cl ../cfile/' + cFileName)
